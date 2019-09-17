@@ -1,0 +1,200 @@
+:root{
+    font-size: 16px;
+}
+
+* { 
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+    font-family: 'Anton', sans-serif;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+
+header{
+    display: grid;
+    grid-template-rows: 20% 30% 50%;
+    grid-template-columns: 15% 40% 45%;
+    width: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header div a{
+    text-decoration: none;
+    font-size: 28px;
+    color:  rgba(48, 145, 9, 0.76);
+    padding: 10px 10px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu a:hover {
+    background-color: rgb(73, 122, 44);
+    color: #f1f1f1;
+}
+.menu a{
+    border: 1px solid rgba(48, 145, 9, 0.76);
+    border-radius: 16px 0 16px 0;
+}
+.name {
+    font-family: 'Lobster', cursive; 
+    font-size: 50px;
+    color: palevioletred;
+    padding: 55px 10px 30px 10px;
+    
+}
+
+.activ {
+    background-color:  rgb(73, 122, 44);
+    color: #f1f1f1;
+}
+
+.bli_med_page {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding: 200px 10px 10px 10px;
+    background-color: #f1f1f1;   
+    display: grid;
+    grid-template-rows: auto auto;
+
+}
+.bli_med_page section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+#info h2{
+    font-size: 28px;
+    color: rgba(111, 112, 110, 0.76);
+    text-align: center;
+    background-color: rgb(241, 226, 231);
+    letter-spacing: 3px;
+}
+
+#info p{
+    font-family: 'Crimson Pro', serif;
+    font-size: 22px;
+    color: rgb(59, 58, 58);
+    line-break: 10px;
+    width: 100%;
+    height: 100%;
+    line-height: 2; 
+    width: 60%;
+    text-align: center;
+    margin:0 auto;
+    padding-top: 30px;
+
+}
+#skjema{
+    background-color: rgba(226, 232, 235, 0.596);
+    max-height: 100%;
+}
+form{
+    display:grid;
+    grid-template-columns: 300px 300px;
+    align-items: center;
+    row-gap: 10px;
+    margin: 5% 30% 5% 30%; 
+}
+
+form #dato{
+    width: 290px;
+    height: 60px;
+    font-size: 22px; 
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgb(238, 248, 203);
+    border: 1px solid rgba(111, 112, 110, 0.76);
+    border-radius: 5px; 
+}
+input[type=date]{
+    background-color:rgb(238, 248, 203);
+    border: 1px solid rgba(111, 112, 110, 0.76);
+    height: 30px;
+}
+form #gender{
+    width: 245px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px; 
+    background-color:rgb(238, 248, 203);
+    border: 1px solid rgba(111, 112, 110, 0.76);
+    border-radius: 5px; 
+}
+
+input[type=text], [type=number], [type=email], [type=phone]{
+    padding: 16px;
+    font-size: 22px; 
+    background-color:rgb(238, 248, 203);
+    border: 1px solid rgba(111, 112, 110, 0.76);
+    border-radius: 5px;
+    outline: none;
+}
+
+#gender, #dato{
+    color: grey;
+    padding: 6px;
+}
+#gender h2 label{    
+    border: 1px solid grey;
+    background-color:rgb(238, 248, 203);
+   
+}    
+button[type=submit], [type=reset]{
+    padding: 10px;
+    font-size: 18px; 
+    background-color:rgb(238, 248, 203);
+    border: 1px solid rgba(111, 112, 110, 0.76);
+    border-radius: 5px;
+    outline: none;
+}
+button[type=submit]:hover{
+    background-color:  rgba(48, 145, 9, 0.76);
+}
+
+button[type=reset]:hover{
+    background-color:  rgba(48, 145, 9, 0.76);
+}
+
+footer{
+    background-color: rgba(48, 145, 9, 0.76);
+    width: 100%; 
+    font-family: Georgia, 'Times New Roman', Times, sans-serif; 
+    color: #f1f1f1;
+    
+}
+#kontakt{
+    border: 1px solid #f1f1f1;
+    width: 30%;
+    margin: 5px 15px;
+    padding: 30px;
+}
+
+#kontakt h1{
+    font-size: 23px;
+    margin-bottom: 10px;
+
+}
+#kontakt p{
+    font-size: 18px;
+}

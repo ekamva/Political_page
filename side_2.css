@@ -1,0 +1,317 @@
+:root{
+    font-size: 16px;
+}
+
+* { 
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    min-height: 100vh;
+    font-family: 'Anton', sans-serif;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+
+#politikk{
+    display: grid;
+    grid-template-rows: 20% 30% 50%;
+    grid-template-columns: 15% 40% 45%;
+    width: 100%;
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+#politikk div a{
+    text-decoration: none;
+    font-size: 28px;
+    color:  rgba(48, 145, 9, 0.76);
+    padding: 10px 10px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#politikk div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#politikk .menu a{
+    border: 1px solid rgba(48, 145, 9, 0.76);
+    border-radius: 16px 0 16px 0;
+}
+#politikk .menu a:hover {
+    background-color: rgb(73, 122, 44);
+    color: #f1f1f1;
+}
+#politikk .name {
+    font-family: 'Lobster', cursive; 
+    font-size: 50px;
+    color: palevioletred;
+    padding: 55px 10px 30px 10px;
+    
+}
+
+#politikk .activ {
+    background-color:  rgb(73, 122, 44);
+    color: #f1f1f1;
+}
+.politikk_side{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #f1f1f1;   
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin: 10px 10px;
+}
+
+.politikk_side h2{
+    font-size: 30px;
+    color: rgba(111, 112, 110, 0.76);
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 30px;
+}
+
+.politikk_side section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.menu-2 a {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 25px;
+    border: 1px solid rgba(111, 112, 110, 0.76);
+    border-radius: 16px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(48, 145, 9, 0.76);
+    margin:10px;   
+}
+
+.menu-2 a:hover{
+    background-color: rgb(236, 174, 195);
+    color: white;
+}
+.menu-2 a:active{
+    background-color: rgb(241, 226, 231);
+}
+
+.menu-2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 10px;
+    text-align: center;
+    margin: 10px 10px;
+    
+    position: sticky;
+    top: 0; 
+    left: 0;
+    background-color: white;
+
+}
+#politisk_side .oversikt{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;  
+    font-size: 36px; 
+}
+.omroder{    
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr) );
+    row-gap: 30px;
+}
+
+
+.omroder article {
+    object-fit: cover;
+    background-color: rgba(226, 232, 235, 0.596);
+    padding: 20px;
+}
+
+.omroder article:nth-child(odd) img {
+    width: 30%;
+    height:40%;
+    padding: 10px;
+    border-radius: 50%;
+    float: left;
+}
+.omroder article:nth-child(even) img {
+    width: 30%;
+    height:40%;
+    padding: 10px;
+    border-radius: 50%;
+    float: right;
+    
+}
+
+.omroder article:nth-child(odd) h2 {
+    padding: 10px 0px 10px 80px;
+    color:rgba(48, 145, 9, 0.76);
+    background-color: rgb(241, 226, 231);
+    text-align: start;
+}
+.omroder article:nth-child(even) h2{
+    padding: 10px 0px 10px 80px;
+    color:rgba(48, 145, 9, 0.76);
+    background-color: rgb(241, 226, 231);
+    text-align: end;
+    padding-right: 80px;
+}
+
+.omroder p{
+    font-family: 'Crimson Pro', serif;
+    font-size: 22px;
+    color: rgb(59, 58, 58);
+    line-break: 10px;
+    width: 100%;
+    height: 100%;
+    line-height: 2; 
+}
+
+.omroder article a {
+    margin-top: 20px;
+    border: 1px solid rgba(111, 112, 110, 0.76);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    align-items: center;
+
+}
+#valgprogram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100vh;
+    background-color:rgb(230, 236, 207);
+}
+#partiprogram h2{
+    padding-bottom: 40px;
+}
+
+.container{
+    display: flex;
+    align-items: center;  
+    flex:1; 
+    
+}
+.container a{
+    text-align: center;
+    padding: 20px 15px 60px 15px;
+    margin:25px;
+    border: 2px solid rgba(48, 145, 9, 0.76);
+    text-decoration: none;
+    background-color: white;
+    transition: 0.4s;
+    height: 200px;
+
+    
+}
+
+.container a:hover{
+    flex:2;
+    transform: scale(1.2);
+    z-index:1;
+}
+
+.container #arbeidsprogram{
+    background-color: rgb(228, 196, 54);
+    border: 2px solid rgba(48, 145, 9, 0.76);
+
+}
+.container #arbeidsprogram h3{
+    color: white;
+    font-size: 29px;
+    padding-bottom: 35px;
+   
+}
+.container #arbeidsprogram h4{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(48, 145, 9, 0.76);
+   
+}
+.container img{
+    width: 100px;;
+    height: 100px;
+    align-items: center;
+    margin-top: 30px;
+}
+.container #prinsipprogram #transportplan {
+    background-color: white;
+}
+.container #transportplan h3{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(48, 145, 9, 0.76);
+} 
+.container #prinsipprogram h3{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(48, 145, 9, 0.76);
+}   
+
+#screen{
+    background-color: rgba(226, 232, 235, 0.596);
+    height: 100vh; 
+}
+#screen p{
+    font-family: 'Crimson Pro', serif;
+    font-size: 38px;
+    color: rgb(59, 58, 58);
+    line-break: 10px;
+    line-height: 2; 
+    margin-left: 25%;
+    
+}
+
+#video-layer{
+    /*position: absolute;*/
+    height: 100%;  
+    width: 100%; 
+    /*z-index:1;*/
+}
+
+#video-layer video{
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin:80px auto;
+}
+
+
+footer{
+    background-color: rgba(48, 145, 9, 0.76);
+    font-family: Georgia, 'Times New Roman', Times, sans-serif; 
+    color: #f1f1f1;
+    
+}
+#kontakt{
+    border: 1px solid white;
+    width: 30%;
+    margin: 5px 15px;
+    padding: 30px;
+}
+
+#kontakt h1{
+    font-size: 23px;
+    margin-bottom: 10px;
+
+}
+#kontakt p{
+    font-size: 18px;
+}

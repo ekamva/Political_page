@@ -1,0 +1,146 @@
+:root{
+    font-size: 16px;
+}
+
+* { 
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+    font-family: 'Anton', sans-serif;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 20% 30% 50%;
+    grid-template-columns: /*repeat(auto-fit, minmax(250px, 1fr) );*/ 15% 40% 45%;
+    width: 100%;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+header div a{
+    text-decoration: none;
+    font-size: 28px;
+    color:  rgba(48, 145, 9, 0.76);
+    padding: 10px 10px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu a:hover {
+    background-color: rgb(73, 122, 44);
+    color: #f1f1f1;
+}
+
+.menu a{
+    border: 1px solid rgba(48, 145, 9, 0.76);
+    border-radius: 16px 0 16px 0;
+}
+.name {
+    font-family: 'Lobster', cursive; 
+    font-size: 50px;
+    color: palevioletred;
+    padding: 55px 10px 30px 10px;
+    
+}
+
+
+.activ {
+    background-color:  rgb(73, 122, 44);
+    color: #f1f1f1;
+}
+
+.main_page {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    padding: 200px 10px 10px 10px;
+    background-color: #f1f1f1;   
+}
+
+main {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+#omOss p{
+    font-size: 15px;
+    color: rgb(59, 58, 58);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(226, 232, 235, 0.596);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid rgba(111, 112, 110, 0.76);
+    
+}
+
+.container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
+}
+
+.container div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.horisontal{
+    grid-column: span 2;
+}
+
+
+footer{
+    background-color: rgba(99, 146, 24, 0.76);
+    width: 100%; 
+    font-family: Georgia, 'Times New Roman', Times, sans-serif; 
+    color: #f1f1f1;
+    
+}
+#kontakt{
+    border: 1px solid #f1f1f1;
+    width: 30%;
+    margin: 5px 15px;
+    padding: 30px;
+}
+
+#kontakt h1{
+    font-size: 23px;
+    margin-bottom: 10px;
+
+}
+#kontakt p{
+    font-size: 18px;
+}
